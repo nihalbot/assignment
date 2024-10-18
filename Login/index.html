@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="main">
+        <div class="toastBox">
+
+        </div>
+        <div class="cart">
+            <div class="login-header">
+                <h1>Login</h1>
+            </div>
+            <div class="input-item">
+                <label for="">User ID</label>
+                <div class="input-group">
+                    <i id="man" class="fa-solid fa-user"></i>
+                    <input id="userid" type="text" placeholder="enter user id" onkeyup="checkName()">
+                    <i id="check" class="fa-solid fa-circle-check"></i>
+                </div>
+                <span class="iderror"></span>
+            </div>
+
+            <div class="input-item">
+                <label for="">Password</label>
+                <div class="input-group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input id="password" type="password" placeholder="enter password" onkeyup="checkPassword()">
+                    <i onclick="showPass()" class="fa-solid fa-eye-slash" id="icon"></i>   
+                </div>
+                <span class="passwordError"></span>
+            </div>
+
+            <div class="login-button">
+                <button id="submit">Login</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
